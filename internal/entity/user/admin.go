@@ -1,9 +1,8 @@
-package entity
+package user
 
-type receptionist struct {
+type Admin struct {
 	ID       int    `json:"id"`
 	Username string `json:"username"`
 	Email    string `json:"email"`
 	Password string `json:"-"`
-	AdminID  int    `json:"admin_id"`
 }

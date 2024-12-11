@@ -1,6 +1,8 @@
-package entity
+package application
 
-import "time"
+import (
+	"time"
+)
 
 type Application struct {
 	ID             int       `json:"id"`
@@ -12,7 +14,7 @@ type Application struct {
 	StartDate      time.Time `json:"start_date"`
 	EndDate        time.Time `json:"end_date"`
 	FoodPlanID     int       `json:"food_plan_id"`
-	Status         string    `json:"status"`
+	Statuses       []Status  `json:"statuses"`
 	ReceptionistID int       `json:"receptionist_id"`
 	TotalPrice     float64   `json:"total_price"`
 }
